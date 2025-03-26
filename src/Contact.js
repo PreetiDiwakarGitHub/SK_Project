@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './ContactUsPage.css';  
-
+import   Location from './Location.js';
+import'./Location.css';
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -41,6 +42,7 @@ const Contact = () => {
   };
 
   return (
+   <>
     <div className="contact-us-container">
       <h1 className="contact-us-title">Contact Us</h1>
       <form className="contact-us-form" onSubmit={handleSubmit}>
@@ -84,8 +86,10 @@ const Contact = () => {
         <p><strong>Phone:</strong> 123-456-7890</p>
         <p><strong>Email:</strong> info@skenterprises.com</p>
       </div>
+    
     </div>
+    < Location/>
+   </>
   );
 }
-
 export default Contact;
