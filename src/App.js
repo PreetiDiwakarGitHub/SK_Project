@@ -9,6 +9,7 @@ import Contact from "./Contact";
 import "./Gallery.css";
 import"./About.css";
 
+import Footer from "./Footer";
 function App() {
   return (
     <Router>
@@ -20,6 +21,7 @@ function App() {
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+      <Footer/>
     </Router>
   );
 }
