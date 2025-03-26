@@ -1,0 +1,86 @@
+/* Header Styles */
+
+header {
+    background-color: #2563eb; /* Blue background */
+    color: white; /* White text color */
+    padding: 16px 0; /* Top and bottom padding */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  nav ul {
+    display: flex;
+    gap: 24px;
+    list-style: none;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  /* Home Page Styles */
+
+.home-container {
+  background-color: #f3f4f6; /* Light gray background */
+  min-height: 100vh; /* Full height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.home-image img {
+  width: 320px; /* Set image width */
+  height: auto;
+  margin-bottom: 16px;
+  border-radius: 8px;
+}
+
+.home-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #2563eb; /* Blue text */
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.home-text {
+  font-size: 1.125rem;
+  color: #4b5563; /* Dark gray text */
+  max-width: 640px;
+  text-align: center;
+}
+
+.home-button {
+  margin-top: 24px;
+  padding: 12px 24px;
+  background-color: #2563eb;
+  color: white;
+  font-weight: 600;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.home-button:hover {
+  background-color: #1d4ed8;
+}
