@@ -1,7 +1,6 @@
 import React from "react";
 import machine from "../src/image/machine.webp";
 import "./Home.css";
-
 function Home() {
   return (
     <div className="home-container">
