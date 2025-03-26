@@ -1,3 +1,4 @@
+/* Header Styling */
 header {
   position: fixed;
   top: 0;
@@ -5,11 +6,12 @@ header {
   width: 100%;
   background-color: #2563eb;
   color: white;
-  padding: 16px 0;
+  padding: 12px 0;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   z-index: 1000;
 }
 
+/* Container */
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -19,20 +21,36 @@ header {
   padding: 0 16px;
 }
 
-.logo {
-  font-size: 24px;
-  font-weight: bold;
+/* Logo with Text */
+.logo-container {
+  display: flex;
+  align-items: center;
 }
 
+.logo-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.logo-text {
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 10px; /* Space between logo and text */
+}
+
+/* Navigation Menu */
 nav ul {
   display: flex;
-  gap: 24px;
+  gap: 20px;
   list-style: none;
 }
 
 nav ul li a {
   color: white;
   text-decoration: none;
+  font-size: 18px;
   transition: color 0.3s ease;
 }
 
@@ -40,62 +58,38 @@ nav ul li a:hover {
   text-decoration: underline;
 }
 
-.home-container {
-  background-color: #f3f4f6;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 24px;
-  margin-top: 80px;
-}
-
-.home-image img {
-  width: 320px;
-  height: auto;
-  margin-bottom: 16px;
-  border-radius: 8px;
-}
-
-.home-title {
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: #2563eb;
-  margin-bottom: 16px;
-  text-align: center;
-}
-
-.home-text {
-  font-size: 1.125rem;
-  color: #4b5563;
-  max-width: 640px;
-  text-align: center;
-}
-
-.home-button {
-  margin-top: 24px;
-  padding: 12px 24px;
-  background-color: #2563eb;
-  color: white;
-  font-weight: 600;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s ease;
-}
-
-.home-button:hover {
-  background-color: #1d4ed8;
-}
-
+/* Buttons */
 .login-btn {
-  font-size: 20px;
-  border-radius: 10px;
-  border: 1px solid rgb(1, 1, 179);
-  color: blue;
+  font-size: 18px;
+  border-radius: 8px;
+  padding: 8px 14px;
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .login-btn:hover {
   background-color: #1d4ed8;
+  border-color: #1d4ed8;
   color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .login-btn {
+    margin-top: 10px;
+  }
 }
