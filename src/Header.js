@@ -13,8 +13,7 @@ function Header() {
             <li><Link to="/services" className="hover:underline">Services</Link></li>
             <li><Link to="/gallery" className="hover:underline">Gallery</Link></li>
             <li><Link to="/contact" className="hover:underline">Contact Us</Link></li>
-            <button className="login-btn">Login</button>
-            <button className="login-btn" >Sing Up</button>
+            <li><Link to= "/Login" className="hover:underline">Login</Link></li>
           </ul>
         </nav>
       </div>
@@ -22,3 +21,5 @@ function Header() {
   );
 }
 export default Header;
+
+

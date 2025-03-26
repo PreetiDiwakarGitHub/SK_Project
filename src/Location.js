@@ -1,6 +1,5 @@
 import React from "react";
 import "./Location.css";
-
 const LocationPage = () => {
   return (
     <div className="location-container">
@@ -18,7 +17,6 @@ const LocationPage = () => {
           loading="lazy"
         ></iframe>
       </div>
-
       <div className="info-container">
         <div className="contact-details">
           <h2>📞 Contact Us</h2>

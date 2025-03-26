@@ -7,6 +7,7 @@ import Services from "./Services";
 import Gallery from "./Gallery";
 import Contact from "./Contact";
 import Footer from "./Footer";
+import Login from "./Login";
 function App() {
   return (
     <Router>
@@ -17,6 +18,7 @@ function App() {
         <Route path="/services" element={<Services />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/Login" element={<Login/>}/>
       </Routes>
       <Footer/>
     </Router>
