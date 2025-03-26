@@ -1,4 +1,3 @@
-/* Home Section */
 .home-container {
   display: flex;
   justify-content: space-around;
@@ -6,7 +5,6 @@
 }
 
 .image-container {
-  flex: 1;
   display: flex;
   justify-content: flex-start;
   margin-left: 100px;
@@ -20,7 +18,6 @@
 }
 
 .text-container {
-  flex: 1;
   max-width: 500px;
   text-align: left;
   padding-right: 60px;

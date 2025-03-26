@@ -1,49 +1,54 @@
-   header {
-    background-color: #2563eb; 
-    color: white; 
-    padding: 16px 0; 
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-  }
-  
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 16px;
-  }
-  
-  .logo {
-    font-size: 24px;
-    font-weight: bold;
-  }
-  
-  nav ul {
-    display: flex;
-    gap: 24px;
-    list-style: none;
-  }
-  
-  nav ul li a {
-    color: white;
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-  
-  nav ul li a:hover {
-    text-decoration: underline;
-  }
-  
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #2563eb;
+  color: white;
+  padding: 16px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav ul {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
 
 .home-container {
   background-color: #f3f4f6;
-  min-height: 100vh; 
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 24px;
+  margin-top: 80px;
 }
 
 .home-image img {
@@ -56,14 +61,14 @@
 .home-title {
   font-size: 2.5rem;
   font-weight: bold;
-  color: #2563eb; 
+  color: #2563eb;
   margin-bottom: 16px;
   text-align: center;
 }
 
 .home-text {
   font-size: 1.125rem;
-  color: #4b5563; 
+  color: #4b5563;
   max-width: 640px;
   text-align: center;
 }
@@ -81,18 +86,16 @@
 
 .home-button:hover {
   background-color: #1d4ed8;
-} 
+}
 
- 
-.login-btn{
+.login-btn {
   font-size: 20px;
   border-radius: 10px;
   border: 1px solid rgb(1, 1, 179);
-  color:blue;
+  color: blue;
 }
-.login-btn:hover{
+
+.login-btn:hover {
   background-color: #1d4ed8;
   color: white;
 }
- 
- 
