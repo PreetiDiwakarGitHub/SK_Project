@@ -1,4 +1,4 @@
-
+/* General Header Styling */
 header {
   position: fixed;
   top: 0;
@@ -33,86 +33,76 @@ header {
 .logo-text {
   font-size: 24px;
   font-weight: bold;
-  margin-left: 10px; 
-
   margin-left: 10px;
 }
-nav ul {
+.nav-links {
+  display: flex;
+}
+
+.nav-links ul {
   display: flex;
   gap: 20px;
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-nav ul li a {
+.nav-links a {
   color: white;
   text-decoration: none;
   font-size: 18px;
+  font-weight: 600;
   transition: color 0.3s ease;
 }
 
-nav ul li a:hover {
+.nav-links a:hover {
   text-decoration: underline;
 }
-
-.login-btn:hover {
-  background-color: #1d4ed8;
-  border-color: #1d4ed8;
-  color: white;
-}
-.menu-toggle {
+.hamburger {
   display: none;
+  font-size: 28px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: white;
+  position: absolute;
+  top: 15px;
+  right: 20px;
 }
 @media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-    align-items: center;
-  }
-  .menu-toggle {
+  .hamburger {
     display: block;
-    background: none;
-    border: none;
-    font-size: 28px;
-    color: white;
-    cursor: pointer;
-    position: absolute;
-    top: 15px;
-    right: 20px;
   }
 
-  nav {
+  .nav-links {
     display: none;
-    width: 100%;
-    text-align: center;
-  }
-
-  nav ul {
     flex-direction: column;
-    gap: 10px;
-    align-items: center;
-    width: 100%;
-    padding: 0;
-    background: #2563eb;
     position: absolute;
     top: 60px;
     left: 0;
+    width: 100%;
+    background-color: #2563eb;
+    text-align: center;
     padding: 15px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
 
-  nav ul li {
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links ul {
+    flex-direction: column;
     width: 100%;
   }
 
-  nav ul li a {
+  .nav-links li {
+    width: 100%;
+  }
+
+  .nav-links a {
     display: block;
     padding: 10px;
     width: 100%;
-  }
-
-  .login-btn {
-    margin-top: 10px;
-  }
-  .show-menu {
-    display: flex;
-    flex-direction: column;
   }
 }

@@ -1,14 +1,15 @@
 import React from "react";
-import machine from "../src/image/machine.webp";
-import image from "../src/image/image.jpg";
-import images from "../src/image/images.jpg";
-import machine1 from "../src/image/machine1.jpg";
+import { Link } from "react-router-dom";
+import machine from "./image/machine.webp";
+import image from "./image/image.jpg";
+import images from "./image/images.jpg";
+import machine1 from "./image/machine1.jpg";
 import "./Home.css";
 
 function Home() {
   return (
     <>
-      {/* Company Introduction Section */}
+
       <div className="home-container">
         <div className="image-container">
           <img src={machine} alt="Machine" className="machine-image" />
@@ -21,11 +22,11 @@ function Home() {
             commercial appliances function efficiently. We take pride in delivering reliable, affordable, and
             high-quality services that guarantee customer satisfaction.
           </p>
-          <button className="home-button">Learn More</button>
+          <button className="home-button">
+            <Link to="/about"    className="home-button">About Us</Link> 
+          </button>
         </div>
       </div>
-
-      {/* Second Section */}
       <div className="second-section">
         <h1>Never Take Broken for an Answer</h1>
         <p>
@@ -37,9 +38,9 @@ function Home() {
           <img src={machine1} alt="Repair 3" />
         </div>
       </div>
-
-      {/* Service Highlights */}
-      <div className="our_Service"> <h1>Our Service</h1></div>
+      <div className="our_Service">
+        <h1 >Our Service</h1>
+      </div>
       <div className="service-highlights">
         <div className="service-box">
           <img src={image} alt="Service 1" />
@@ -66,32 +67,30 @@ function Home() {
           </p>
         </div>
       </div>
-
-      {/* Video Section */}
       <div className="video-section">
         <h2>Watch Our Repair Guides</h2>
         <p>Learn more about our repair and maintenance services through these detailed video guides.</p>
         <div className="video-container">
           <iframe
-            src="https://www.youtube.com/embed/YJpAj6mUyCc?si=BCc5SD8p_OHAyBom"
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/YJpAj6mUyCc"
             title="YouTube video player"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
           ></iframe>
           <iframe
             width="560"
             height="315"
-            src="https://www.youtube.com/embed/r-iYfmrzvnA?si=4j8wj-gbCIJUSKip"
+            src="https://www.youtube.com/embed/r-iYfmrzvnA"
             title="YouTube video player"
             frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerPolicy="strict-origin-when-cross-origin"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
           ></iframe>
         </div>
       </div>
-
-      {/* Why Choose Us Section */}
       <div className="why-choose-us">
         <h2>Why Choose Us?</h2>
         <p>

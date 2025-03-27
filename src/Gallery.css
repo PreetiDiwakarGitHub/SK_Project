@@ -3,13 +3,14 @@
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 20px;
+  padding-top: 80px;
   text-align: center;
 }
 
 .gallery-container h1 {
   font-size: 28px;
   margin-bottom: 20px;
+  
 }
 
 
