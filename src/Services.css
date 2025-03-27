@@ -1,33 +1,33 @@
-
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .services-container {
     width: 85%;
     margin: auto;
-    padding: 30px 0;
+    padding-top: 100px ;
     text-align: center;
+    min-height: 100vh;
   }
-  
-
   .swiper {
     width: 100%;
   }
-  
   .service-slide {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: #fff;
+    background: hsl(0, 40%, 98%);
     padding: 30px;
     border-radius: 12px;
     box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
   }
-  
   .service-slide:hover {
     transform: scale(1.07);
   }
-  
   .service-image {
     width: 100%;
     max-width: 400px;
@@ -36,18 +36,15 @@
     margin-bottom: 20px;
     transition: transform 0.3s ease-in-out;
   }
-  
   .service-image:hover {
     transform: scale(1.05);
   }
-  
   .service-title {
     font-size: 26px;
     font-weight: bold;
     color: #222;
     margin-bottom: 10px;
   }
-  
   .service-description {
     font-size: 18px;
     color: #555;
@@ -60,7 +57,6 @@
   .swiper-button-prev {
     color: #222 !important;
   }
-  
   .swiper-pagination-bullet {
     background: #222 !important;
   }
@@ -98,7 +94,6 @@
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
   }
-  
   .contact-item:hover {
     transform: scale(1.05);
   }
@@ -129,6 +124,7 @@
     max-width: 1200px;
     margin: auto;
     flex-wrap: wrap;
+    min-height: 80vh;
   }
   
   .hero-image {
@@ -142,27 +138,22 @@
     width: 50%;
     max-width: 600px;
     text-align: left;
-  }
-  
+  } 
   .hero-content h1 {
     font-size: 28px;
     color: #333;
     margin-bottom: 10px;
   }
-  
   .hero-content p {
     font-size: 16px;
     color: #555;
     line-height: 1.6;
   }
-  
   .hero-contact {
     font-size: 20px;
     color: #e63946;
     margin-top: 15px;
   }
-
-
   .services-grid {
     display: flex;
     flex-wrap: wrap; 
@@ -170,7 +161,6 @@
     gap: 20px; 
     padding: 20px;
   }
-  
   .service-item {
     width: 30%; 
     max-width: 250px;
@@ -237,7 +227,6 @@
     transform: scale(1.05);
     box-shadow: 0px 4px 8px rgba(0, 123, 255, 0.3);
   }
-  
   .service-features {
     display: flex;
     flex-wrap: wrap;
@@ -264,7 +253,6 @@
     font-size: 20px;
     margin-bottom: 10px;
   }
-  
   .service-features p {
     color: #444;
     font-size: 16px;
