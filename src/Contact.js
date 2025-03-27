@@ -15,7 +15,6 @@ const Contact = () => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
-
   const handleSubmit = (e) => {
     e.preventDefault();
     fetch('https://script.google.com/macros/s/AKfycbwrC07b1lRbNTtKtiyphBIsnKk84tRz3EluLv5MhttXgZfeATURj2Lv9GSMG2h-QGB5/exec', {

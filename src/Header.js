@@ -12,7 +12,6 @@ function Header() {
           <img src={logo} alt="SK Enterprises Logo" className="logo-img" />
           <span className="logo-text">SK Enterprises</span>
         </div>
-
         <nav>
           <ul className="flex space-x-6">
             <li><Link to="/" className="hover:underline">Home</Link></li>
