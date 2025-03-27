@@ -1,27 +1,35 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Header.css";
 import logo from "../src/image/Logo.jpg"; 
 
 function Header() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <header>
       <div className="container">
-        
         <div className="logo-container">
           <img src={logo} alt="SK Enterprises Logo" className="logo-img" />
           <span className="logo-text">SK Enterprises</span>
         </div>
+        <div className="hamburger" onClick={toggleMenu}>
+          ☰
+        </div>
 
-        <nav>
-          <ul className="flex space-x-6">
-            <li><Link to="/" className="hover:underline">Home</Link></li>
-            <li><Link to="/about" className="hover:underline">About Us</Link></li>
-            <li><Link to="/services" className="hover:underline">Services</Link></li>
-            <li><Link to="/gallery" className="hover:underline">Gallery</Link></li>
-            <li><Link to="/contact" className="hover:underline">Contact Us</Link></li>
-
-            <li><Link to= "/Login" className="hover:underline">Login</Link></li>
+        {/* Navigation Links */}
+        <nav className={`nav-links ${isOpen ? "open" : ""}`}>
+          <ul>
+            <li><Link to="/" onClick={toggleMenu}>Home</Link></li>
+            <li><Link to="/about" onClick={toggleMenu}>About Us</Link></li>
+            <li><Link to="/services" onClick={toggleMenu}>Services</Link></li>
+            <li><Link to="/gallery" onClick={toggleMenu}>Gallery</Link></li>
+            <li><Link to="/contact" onClick={toggleMenu}>Contact Us</Link></li>
+            <li><Link to="/login" onClick={toggleMenu}>Login</Link></li>
           </ul>
         </nav>
       </div>
@@ -30,5 +38,3 @@ function Header() {
 }
 
 export default Header;
-
-
