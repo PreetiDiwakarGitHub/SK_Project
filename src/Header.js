@@ -5,8 +5,8 @@ import logo from "../src/image/Logo.jpg";
 
 function Header() {
   return (
-    <header className="bg-blue-600 text-white py-4 shadow-md">
-      <div className="container mx-auto flex justify-between items-center px-4">
+    <header>
+      <div className="container">
         
         <div className="logo-container">
           <img src={logo} alt="SK Enterprises Logo" className="logo-img" />
