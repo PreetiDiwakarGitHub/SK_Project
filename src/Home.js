@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom"; // Ensure React Router is used for navigation
+import { Link } from "react-router-dom";
 import machine from "./image/machine.webp";
 import image from "./image/image.jpg";
 import images from "./image/images.jpg";
@@ -9,7 +9,7 @@ import "./Home.css";
 function Home() {
   return (
     <>
-      {/* Company Introduction Section */}
+
       <div className="home-container">
         <div className="image-container">
           <img src={machine} alt="Machine" className="machine-image" />
@@ -23,12 +23,10 @@ function Home() {
             high-quality services that guarantee customer satisfaction.
           </p>
           <button className="home-button">
-            <Link to="/about">About Us</Link> {/* Using Link for routing */}
+            <Link to="/about"    className="home-button">About Us</Link> 
           </button>
         </div>
       </div>
-
-      {/* Second Section */}
       <div className="second-section">
         <h1>Never Take Broken for an Answer</h1>
         <p>
@@ -40,10 +38,8 @@ function Home() {
           <img src={machine1} alt="Repair 3" />
         </div>
       </div>
-
-      {/* Service Highlights */}
       <div className="our_Service">
-        <h1>Our Service</h1>
+        <h1 >Our Service</h1>
       </div>
       <div className="service-highlights">
         <div className="service-box">
@@ -71,8 +67,6 @@ function Home() {
           </p>
         </div>
       </div>
-
-      {/* Video Section */}
       <div className="video-section">
         <h2>Watch Our Repair Guides</h2>
         <p>Learn more about our repair and maintenance services through these detailed video guides.</p>
@@ -97,8 +91,6 @@ function Home() {
           ></iframe>
         </div>
       </div>
-
-      {/* Why Choose Us Section */}
       <div className="why-choose-us">
         <h2>Why Choose Us?</h2>
         <p>
