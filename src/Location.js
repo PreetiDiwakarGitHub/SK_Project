@@ -34,7 +34,6 @@ const LocationPage = () => {
             <li><strong>Sunday:</strong> 12AM - 3PM</li>
 
 
-            
           </ul>
         </div>
       </div>
