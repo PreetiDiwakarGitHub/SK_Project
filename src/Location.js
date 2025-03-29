@@ -31,7 +31,7 @@ const LocationPage = () => {
           <ul>
             <li><strong>Monday - Friday:</strong> 9 AM - 6 PM</li>
             <li><strong>Saturday:</strong> 10 AM - 4 PM</li>
-            <li><strong>Sunday:</strong> Closed</li>
+            <li><strong>Sunday:</strong> 12AM - 3PM</li>
           </ul>
         </div>
       </div>
